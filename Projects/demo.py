@@ -18,8 +18,8 @@ timeInSeconds = 24 * 60 * 60
 # print(myString1)
 # print(myString2)
 #
-firstName = "Chittamuri"
-lastName = "Teja"
+# firstName = "Chittamuri"
+# lastName = "Teja"
 # print(firstName + lastName)
 
 #  Functions
@@ -53,20 +53,94 @@ lastName = "Teja"
 #
 # print(age_calculator(age))
 
-# Tip Calculator
+# Tip Calculator If-else
 
-bill_amount = int(input("Enter your bill amount? \n"))
+# bill_amount = int(input("Enter your bill amount? \n"))
+#
+# if bill_amount > 1000:
+#     tip = bill_amount * 0.3
+# else:
+#     tip = bill_amount * 0.1
+#
+# total_bill = bill_amount + tip
+#
+# def tip_cal(x,y,z):
+#
+#     return f"Hi sir ,your Bill amount is ${x} and the tip amount is ${y}.so the total bill amount is {z}"
+#
+# print(tip_cal(bill_amount,tip,total_bill))
 
-if bill_amount > 1000:
-    tip = bill_amount * 0.3
-else:
-    tip = bill_amount * 0.1
+# Type casting  changing the type of the data from one data type to another
 
-total_bill = bill_amount + tip
+# In python type() is used to  verify the datatype
 
-def tip_cal(x,y,z):
+# is_playing = [1, 'tej', 2.5]
+# print(type(is_playing))
 
-    return f"Hi sir ,your Bill amount is ${x} and the tip amount is ${y}.so the total bill amount is {z}"
+# Program that specifies the concepts of functions , if else loops, nested loops & Typeconvesrion & Maintaing a clean code
+#Always try to encapsulate the program logic inside a function which keeps our code cleaner and maintable
 
-print(tip_cal(bill_amount,tip,total_bill))
+# def time_calculator(no_of_days):
+#     return f"{no_of_days} days are equal to {no_of_days * timeInHours} Hours"
+
+# def validate_and_execute():
+#   if user_input.isdigit():
+#      input_number = int(user_input)
+#      if input_number > 0:
+#        return time_calculator(input_number)
+#   elif user_input == 0:
+#               return "you entered zero which is not at all a valid one!Please enter a valid number!"
+#   else:
+#             return "You Entered an Invalid Text. Please enter a valid number!"
+
+# In Python "try" --- helps to ran a  block of code
+# "except" -- if the exceution stopped because of any kind of errors then it collects that error and print some message to the user.
+
+
+# def validate_and_execute():
+#     try:
+#         input_number = int(user_input)
+#         if input_number > 0:
+#             return time_calculator(input_number)
+#         elif user_input == 0:
+#          return "you entered zero which is not at all a valid one!Please enter a valid number!"
+#         else:
+#             return "you entered a negative number which is not supported for conversion.please enter a positive number!"
+#     except:
+#       print("You Entered an Invalid Text. Please enter a valid number!")
+#
+# user_input = ""
+# while user_input != "exit":
+#  user_input = input("Hey user enter no.of days? \n")
+#  print(validate_and_execute())
+
+# List datatype similar as Array
+# Here in this program we are using for loop to repeat the same task for certain elements in the list.
+
+# def time_calculator(no_of_days):
+#     return f"{no_of_days} days are equal to {no_of_days * timeInHours} Hours"
+# def validate_and_execute():
+#     try:
+#         input_number = int(num_of_days)
+#         if input_number > 0:
+#             return time_calculator(input_number)
+#         elif user_input == 0:
+#          return "you entered zero which is not at all a valid one!Please enter a valid number!"
+#         else:
+#             return "you entered a negative number which is not supported for conversion.please enter a positive number!"
+#     except:
+#       print("You Entered an Invalid Text. Please enter a valid number!")
+#
+# user_input = ""
+# while user_input != "exit":
+#  user_input = input("Hey user enter no.of days? \n")
+#  for num_of_days in user_input.split():
+#   print(validate_and_execute())
+
+
+
+
+
+
+
 
