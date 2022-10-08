@@ -118,6 +118,7 @@
 
 # Functions
 
+
 # name_input = input("Enter your name? \n")
 # greet = "Good Morning"
 
@@ -130,12 +131,15 @@
 # print(say_myname(name_input,greet))
 
 #  Default Arguments
-# In this example we are passing "Greet value as "Hello" by default which prints it by default even if we missed to call that argument
+# In this example we are passing "Greet value as
+# "Hello" by default which prints it by default  even if we missed to call that argument
+
 
 # def say_myname2(name,greet='Hello'):
 #     return f"{greet} {name} "
 #
 # print(say_myname2(name_input))
+# ----------------------------------------------------------------------------------
 
 # Adding 3 values using Functions
 
@@ -153,14 +157,14 @@
 #
 # print(sum(value_1, value_2, value_3))
 
-
+# --------------------------------------------------------------------------------------------------
 # Tip Calculator Using Functions
 
 # food_amount = int(input("Tell me your ordered food amount?\n"))
 # tip = int(input("Enter tip amount \n"))
 #
-#
-# def tip_calculator(amount, tip_percent):
+#Type Hinting
+# def tip_calculator(amount: int, tip_percent: int) -> int:
 #   tip_amount = amount * (tip_percent / 100)
 #   print('======================================')
 #   total_bill = amount + tip_amount
@@ -168,9 +172,11 @@
 #
 # print(tip_calculator(food_amount,tip))
 
+# -----------------------------------------------------------------------------------------------------------
+
 # Weather Emoji app using functions
 
-weather_input = input("What is the weather Condition Right Now? \n")
+# weather_input = input("What is the weather Condition Right Now? \n")
 
 # TypeHinting helps to understand what type of data that the function is expecting
 
@@ -179,13 +185,44 @@ weather_input = input("What is the weather Condition Right Now? \n")
 # "None" refers what type of output it delivers in this case it is emoji's..
 
 
-def weather_to_emoji(usr_input: str) -> None:
-    if usr_input == "rainy":
-        print('☂️☂️☂️☂️')
-    elif usr_input == "thunderstorm":
-        print("⛈️⛈️⛈️")
-    elif usr_input == "sunny":
-        print("🧴🧴🧴🕶️🕶️🕶️")
+# def weather_to_emoji(usr_input: str) -> None:
+#     if usr_input == "rainy":
+#         print('☂️☂️☂️☂️')
+#     elif usr_input == "thunderstorm":
+#         print("⛈️⛈️⛈️")
+#     elif usr_input == "sunny":
+#         print("🧴🧴🧴🕶️🕶️🕶️")
+#
+# weather_to_emoji(weather_input)
 
-weather_to_emoji(weather_input)
+# --------------------------------------------------------------------------------------------------------
+
+# To test our code we can make use of "Assert"
+# if assert condition is not meet then program will get terminate
+# assert sum(num_1,num_2) == 0
+
+# ------------------------------------------------------------------------------------------------------------
+
+# Lists  ===== Arrays
+
+num_group = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# List methods (starting with . are called methods)
+
+# .append() -- Add an element at the end of the array
+# num_group.append('Teja')
+# print(num_group)
+
+# Indexing -- we can get the element based on the index (which starts from 0 )
+# print(num_group[2])
+
+# slicing an list or array --- which gets the elements based on start index to stop index
+# print(num_group[1:3])
+
+# length of a list
+
+print(len(num_group))
+
+
+
 
